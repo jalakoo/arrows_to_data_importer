@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": -101,
+        "y": -25
+      },
+      "caption": "User",
+      "labels": [],
+      "properties": {
+        "first name": "string",
+        "email": "string",
+        "last name": "string"
+      },
+      "style": {
+        "border-width": 0,
+        "node-color": "#996699",
+        "caption-color": "#ffffff"
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": 255.5,
+        "y": -25
+      },
+      "caption": "Question",
+      "labels": [],
+      "properties": {
+        "content": "string"
+      },
+      "style": {
+        "caption-color": "#ffffff",
+        "border-width": 0,
+        "node-color": "#FFCC66"
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 255.5,
+        "y": 255.49999999999997
+      },
+      "caption": "Comment",
+      "labels": [],
+      "properties": {
+        "content": "string"
+      },
+      "style": {
+        "border-width": 0,
+        "node-color": "#33CCFF",
+        "caption-color": "#ffffff"
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 536,
+        "y": -25
+      },
+      "caption": "Tag",
+      "labels": [],
+      "properties": {},
+      "style": {
+        "border-width": 0,
+        "node-color": "#FF9966",
+        "caption-color": "#ffffff"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n0",
+      "toId": "n1",
+      "type": "ASKED",
+      "properties": {},
+      "style": {
+        "arrow-width": 3
+      }
+    },
+    {
+      "id": "n1",
+      "fromId": "n2",
+      "toId": "n1",
+      "type": "RESPONSE_TO",
+      "properties": {},
+      "style": {
+        "arrow-width": 3
+      }
+    },
+    {
+      "id": "n2",
+      "fromId": "n0",
+      "toId": "n2",
+      "type": "POSTED",
+      "properties": {},
+      "style": {
+        "arrow-width": 3
+      }
+    },
+    {
+      "id": "n3",
+      "fromId": "n1",
+      "toId": "n3",
+      "type": "TAGGED",
+      "properties": {},
+      "style": {
+        "arrow-width": 3
+      }
+    },
+    {
+      "id": "n4",
+      "fromId": "n2",
+      "toId": "n2",
+      "type": "RESPONSE_TO",
+      "properties": {},
+      "style": {}
+    }
+  ],
+  "style": {
+    "font-family": "sans-serif",
+    "background-color": "#ffffff",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#ffffff",
+    "border-width": 4,
+    "border-color": "#000000",
+    "radius": 50,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#000000",
+    "caption-font-size": 50,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "pill",
+    "label-color": "#000000",
+    "label-background-color": "#ffffff",
+    "label-border-color": "#000000",
+    "label-border-width": 4,
+    "label-font-size": 40,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 5,
+    "arrow-color": "#000000",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 16,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#000000",
+    "property-font-size": 16,
+    "property-font-weight": "normal"
+  }
+}
